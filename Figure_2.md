@@ -1,4 +1,4 @@
-## FIGURE 1
+## FIGURE 2
 ### Faceted count distribution graphs using a five day average
 
 Activate packages:
