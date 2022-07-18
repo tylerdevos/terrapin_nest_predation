@@ -7,7 +7,6 @@ library(ggplot2)
 library(zoo)
 library(ggridges)
 library(reshape2)
-library(car)
 ```
 Import data:
 ```
@@ -72,7 +71,7 @@ p3 <- ggplot(long_averages, aes(julian_day, value, fill=variable)) +
   scale_x_continuous(breaks=seq(150,276,25)) +
   scale_y_continuous(breaks=seq(0,25,5), limits=c(0,27)) +
   facet_wrap(~variable, ncol=1, labeller=labeller(variable=graph_labels), scales="free_x") +
-  scale_fill_manual(name='', values=c("total"="grey90", "raccoon"="grey60", "skunk"="black")) +
+  scale_fill_manual(name='', values=c("total"="grey60", "raccoon"="grey60", "skunk"="grey60")) +
   scale_color_manual(name="Terrapin Activity", values=c("nesting females" = "blue", "emerged nests" = "green4")) +
   labs(x="Julian Day", y="Count") +
   ggtitle("2020") +
