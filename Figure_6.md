@@ -1,6 +1,8 @@
 ## FIGURE 6
 ### Panels A & B: Count distribution graphs using a five day average + labelled vertical lines
 
+<img src="/Graphics/Figure_6.jpg" alt="Figure 2"/>
+
 Activate packages:
 ```
 library(ggplot2)
