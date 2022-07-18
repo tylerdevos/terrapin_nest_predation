@@ -7,7 +7,6 @@ library(ggplot2)
 library(zoo)
 library(ggridges)
 library(reshape2)
-library(car)
 ```
 Import data:
 ```
