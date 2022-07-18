@@ -40,7 +40,7 @@ long_averages = melt(averages, "julian_day")
 Generate graph and export to working directory as a PDF:
 ```
 graph_labels <- c("nesting"="Nesting Females","predated"="Predated Nests","hatched"="Emerged Nests")
-p1 <- ggplot(long_averages, aes(julian_day, value, fill=variable)) +
+p2 <- ggplot(long_averages, aes(julian_day, value, fill=variable)) +
   geom_line(show.legend=FALSE) +
   geom_density_line(stat="identity", alpha=0.3, show.legend=FALSE) +
   scale_x_continuous(breaks=seq(150,276,25)) +
@@ -51,5 +51,5 @@ p1 <- ggplot(long_averages, aes(julian_day, value, fill=variable)) +
   ggtitle("2020") +
   theme_minimal() +
   theme(plot.title=element_text(hjust=0.5), axis.line.x=element_line(), axis.line.y.left=element_line(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), text=element_text(family="Times New Roman"))
-ggsave(p1, filename="2020_turts.pdf", devic=cairo_pdf, width=4.00, height=5.25, units="in")
+ggsave(p2, filename="2020_turts.pdf", devic=cairo_pdf, width=4.00, height=5.25, units="in")
 ```
