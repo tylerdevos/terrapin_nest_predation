@@ -1,7 +1,8 @@
 ## FIGURE 5
-### Faceted series of scatterplots with linear regression lines and 95% confidence intervals
 
 <img src="/Graphics/Figure_5.jpg" alt="Figure 2"/>
+
+### Faceted series of scatterplots with linear regression lines and 95% confidence intervals
 
 Activate packages:
 ```
