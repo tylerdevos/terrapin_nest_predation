@@ -1,7 +1,8 @@
 ## FIGURE 4
-### Scatterplot with linear regression line and 95% confidence interval
 
 <img src="/Graphics/Figure_4.jpg" alt="Figure 2"/>
+
+### Scatterplot with linear regression line and 95% confidence interval
 
 Activate packages:
 ```
