@@ -7,7 +7,6 @@ library(ggplot2)
 library(zoo)
 library(ggridges)
 library(reshape2)
-library(car)
 ```
 Import data:
 ```
@@ -21,8 +20,6 @@ Calculate five-day averages:
 ```
 temp.predation <-zoo(counts_2021$predated_fenced,counts_2021$julian_day)
 predation.average <- rollmean(temp.predation, 5, fill=list(NA,NULL,NA))
-temp.predators <-zoo(counts_2021$predators_total, counts_2021$julian_day)
-predator.average <- rollmean(temp.predators, 5, fill=list(NA,NULL,NA))
 ```
 Create new dataframe containing only averaged counts:
 ```
