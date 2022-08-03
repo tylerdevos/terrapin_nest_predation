@@ -11,7 +11,7 @@ library(zoo)
 library(ggridges)
 library(reshape2)
 ```
-Import data (see example data [here](https://github.com/tylerdevos/terrapin_nest_predation/count_data_2020.csv)):
+Import data (see example data [here](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/count_data_2020.csv)):
 ```
 counts_2020 <- read.csv("~/Desktop/Spring 2022/Nest predation project/Clean Data/count_data_2020.csv")
 ```
