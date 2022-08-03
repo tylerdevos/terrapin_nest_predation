@@ -1,0 +1,23 @@
+﻿dates,julian_days,week,species,proportion_inside_fence
+4 Jun - 10 Jun,155-161,1,raccoon,0.556
+11 Jun - 17 Jun,162-168,2,raccoon,0.152
+18 Jun - 24 Jun,169-175,3,raccoon,0.292
+25 Jun - Jul 1,176-182,4,raccoon,0.048
+Jul 2 - Jul 8,183-189,5,raccoon,0.000
+Jul 9 - Jul 15,190-196,6,raccoon,NA
+Jul 16 - Jul 22,197-203,7,raccoon,0.000
+Jul 23 - Jul 29,204-210,8,raccoon,NA
+Jul 30 - Aug 5,211-217,9,raccoon,NA
+Aug 6 - Aug 12,218-224,10,raccoon,NA
+Aug 13 - Aug 15,225-227,11,raccoon,0.000
+4 Jun - 10 Jun,155-161,1,skunk,0.750
+11 Jun - 17 Jun,162-168,2,skunk,0.833
+18 Jun - 24 Jun,169-175,3,skunk,0.627
+25 Jun - Jul 1,176-182,4,skunk,0.679
+Jul 2 - Jul 8,183-189,5,skunk,0.680
+Jul 9 - Jul 15,190-196,6,skunk,0.400
+Jul 16 - Jul 22,197-203,7,skunk,0.455
+Jul 23 - Jul 29,204-210,8,skunk,0.214
+Jul 30 - Aug 5,211-217,9,skunk,0.400
+Aug 6 - Aug 12,218-224,10,skunk,NA
+Aug 13 - Aug 15,225-227,11,skunk,NA
