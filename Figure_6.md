@@ -11,7 +11,7 @@ library(zoo)
 library(ggridges)
 library(reshape2)
 ```
-Import data:
+Import data (see example data [here](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Data/fence_predation_counts.csv)):
 ```
 counts_2021 <- read.csv("~/Desktop/Spring 2022/Nest predation project/Clean Data/fence_predation_counts.csv")
 ```
@@ -71,7 +71,7 @@ library(ggridges)
 library(reshape2)
 library(car)
 ```
-Import data:
+Import data (see example data [here](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Data/predator_positions.csv)):
 ```
 predator_positions <- read.csv("~/Desktop/Spring 2022/Nest predation project/Clean Data/predator_positions.csv")
 ```
