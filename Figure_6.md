@@ -71,9 +71,9 @@ library(ggridges)
 library(reshape2)
 library(car)
 ```
-Import data (see example data [here](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Data/predator_positions.csv)):
+Import data (see example data [here](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Data/predator_locations.csv)):
 ```
-predator_positions <- read.csv("~/Desktop/Spring 2022/Nest predation project/Clean Data/predator_positions.csv")
+predator_locations <- read.csv("~/Desktop/Spring 2022/Nest predation project/Clean Data/predator_locations.csv")
 ```
 Specify locations and values for numeric labels:
 ```
@@ -81,7 +81,7 @@ annotation <- data.frame(x=c(4,6,8.5), y=c(0.875,0.875,0.875), label=c("2","3","
 ```
 Generate graph and export to working directory as a PDF:
 ```
-p6C <- ggplot(predator_positions, aes(week, proportion_inside_fence, color=species)) +
+p6C <- ggplot(predator_locations, aes(week, proportion_inside_fence, color=species)) +
   geom_vline(xintercept=4, color="red3", linetype="longdash") +
   geom_vline(xintercept=6, color="red3", linetype="longdash") +
   geom_vline(xintercept=8.5, color="red3", linetype="longdash") +
