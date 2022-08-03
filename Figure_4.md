@@ -8,7 +8,7 @@ Activate packages:
 ```
 library(ggplot2)
 ```
-Import data:
+Import data (see example data [here](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Data/count_data_2020.csv)):
 ```
 counts_2020 <- read.csv("~/Desktop/Spring 2022/Nest predation project/Clean Data/count_data_2020.csv")
 ```
