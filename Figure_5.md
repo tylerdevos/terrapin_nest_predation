@@ -26,7 +26,8 @@ Generate graph and export to working directory as a PDF:
 ```
 p5 <- ggplot(ordered, aes(x=predator_count, y=predated_total, fill=species)) +
   geom_point(pch=21, cex=2) +
-  geom_smooth(method="lm", color="red4", lwd=0.5, linetype="dashed") +
+  geom_smooth(data=ordered %>% filter(species %in% "raccoon"), method="lm", color="red4", lwd=0.5, linetype="dashed") +
+  geom_smooth(data=ordered %>% filter(species %in% "skunk"), method="lm", color="red4", lwd=0.5, linetype="dashed") +
   facet_wrap(~species, scales='free') +
   scale_x_continuous(limits=c(0,5), breaks=seq(0,5,1)) +
   scale_y_continuous(limits=c(0,33)) +
