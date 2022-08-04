@@ -2,11 +2,12 @@
 
 <img src="/Graphics/Figure_5.jpg" alt="Figure 2"/>
 
-### Faceted series of scatterplots with linear regression lines and 95% confidence intervals
+### Faceted series of scatterplots with linear regression lines and 95% confidence intervals for frequently observed species
 
 Activate packages:
 ```
 library(ggplot2)
+library(dplyr)
 ```
 Import data (see example data [here](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Data/species_predation_regression_counts.csv)):
 ```
