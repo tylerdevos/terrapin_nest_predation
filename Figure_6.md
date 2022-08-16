@@ -96,3 +96,4 @@ p6C <- ggplot(predator_locations, aes(week, proportion_inside_fence, color=speci
   theme(plot.title=element_text(hjust=0.5), axis.line.x=element_line(), axis.line.y.left=element_line(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), text=element_text(family="Times New Roman"))
 ggsave(p6C, filename="fence_positions.pdf", devic=cairo_pdf, width=7, height=3.3, units="in")
 ```
+### [<<< Back to Figure 5](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Figure_5.md)
