@@ -55,4 +55,4 @@ p2 <- ggplot(long_averages, aes(julian_day, value, fill=variable)) +
   theme(plot.title=element_text(hjust=0.5), axis.line.x=element_line(), axis.line.y.left=element_line(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), text=element_text(family="Times New Roman"))
 ggsave(p2, filename="2020_turtles.pdf", devic=cairo_pdf, width=3.1, height=4.2, units="in")
 ```
-[To Figure 3 >>>](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Figure_3.md)
+### [To Figure 3 >>>](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Figure_3.md)
