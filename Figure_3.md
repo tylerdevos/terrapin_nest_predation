@@ -82,4 +82,4 @@ p3 <- ggplot(long_averages, aes(julian_day, value, fill=variable)) +
   theme(plot.title=element_text(hjust=0.5), axis.line.x=element_line(), axis.line.y.left=element_line(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), text=element_text(family="Times New Roman"))
 ggsave(p3, filename="2020_predators.pdf", devic=cairo_pdf, width=4, height=4.2, units="in")
 ```
-### [<<< Back to Figure 2](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Figure_2.md)                    [To Figure 4 >>>](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Figure_4.md)
+### [<<< Back to Figure 2](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Figure_2.md) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [To Figure 4 >>>](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Figure_4.md)
