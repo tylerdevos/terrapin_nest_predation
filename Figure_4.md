@@ -1,6 +1,6 @@
 ## FIGURE 4
 
-<img src="/Graphics/Figure_4.jpg" alt="Figure 2"/>
+<img src="/Graphics/Figure_4.jpg" alt="Figure 2" width="400"/>
 
 ### Scatterplot with linear regression line and 95% confidence interval
 
