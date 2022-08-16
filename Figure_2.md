@@ -53,5 +53,5 @@ p2 <- ggplot(long_averages, aes(julian_day, value, fill=variable)) +
   ggtitle("2020") +
   theme_minimal() +
   theme(plot.title=element_text(hjust=0.5), axis.line.x=element_line(), axis.line.y.left=element_line(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), text=element_text(family="Times New Roman"))
-ggsave(p2, filename="2020_turts.pdf", devic=cairo_pdf, width=4.00, height=5.25, units="in")
+ggsave(p2, filename="2020_turtles.pdf", devic=cairo_pdf, width=3.1, height=4.2, units="in")
 ```
