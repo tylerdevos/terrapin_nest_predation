@@ -1,6 +1,6 @@
 ## FIGURE 5
 
-<img src="/Graphics/Figure_5.jpg" alt="Figure 2"/>
+<img src="/Graphics/Figure_5.jpg" alt="Figure 2" width="700"/>
 
 ### Faceted series of scatterplots with linear regression lines and 95% confidence intervals for frequently observed species
 
