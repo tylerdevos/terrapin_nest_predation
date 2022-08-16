@@ -1,6 +1,6 @@
 ## FIGURE 6
 
-<img src="/Graphics/Figure_6.jpg" alt="Figure 2"/>
+<img src="/Graphics/Figure_6.jpg" alt="Figure 2" width="600"/>
 
 ### Panels A & B: Count distribution graphs using a five day average + labelled vertical lines
 
