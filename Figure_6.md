@@ -59,7 +59,7 @@ p6A <- ggplot(long_averages, aes(julian_day, value)) +
   ggtitle("Predated Nests Within the Electric Fence") +
   theme_minimal() +
   theme(text=element_text(family="Times New Roman"), plot.title=element_text(hjust=0.5), axis.line.x=element_line(), axis.line.y.left=element_line(), panel.grid.major=element_blank(), panel.grid.minor=element_blank())
-ggsave(p6A, filename="predated_fenced.pdf", devic=cairo_pdf, width=6, height=4, units="in")
+ggsave(p6A, filename="predated_fenced.pdf", devic=cairo_pdf, width=3.2, height=2, units="in")
 ```
 
 ### Panel C: Line graph + labelled vertical lines
@@ -94,5 +94,5 @@ p6C <- ggplot(predator_locations, aes(week, proportion_inside_fence, color=speci
   labs(x="Week", y="Proportion observed within fence boundary") +
   theme_minimal() +
   theme(plot.title=element_text(hjust=0.5), axis.line.x=element_line(), axis.line.y.left=element_line(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), text=element_text(family="Times New Roman"))
-ggsave(p6C, filename="fence_positions.pdf", devic=cairo_pdf, width=7, height=4, units="in")
+ggsave(p6C, filename="fence_positions.pdf", devic=cairo_pdf, width=7, height=3.3, units="in")
 ```
