@@ -28,5 +28,5 @@ p4 <- ggplot(counts_2020.2, aes(x=predators_total, y=predated_total)) +
   ggtitle("2020") +
   theme_minimal() +
   theme(plot.title=element_text(hjust=0.5), axis.line=element_line(), legend.position='none', panel.grid.major=element_blank(), panel.grid.minor=element_blank(), text=element_text(family="Times New Roman"))
-ggsave(p4, filename="predation_regression_2020.pdf", devic=cairo_pdf, width=5, height=3.33, units="in")
+ggsave(p4, filename="predation_regression_2020.pdf", devic=cairo_pdf, width=3.15, height=2.1, units="in")
 ```
