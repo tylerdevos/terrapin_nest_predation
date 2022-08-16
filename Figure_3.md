@@ -1,6 +1,6 @@
 ## FIGURE 3
 
-<img src="/Graphics/Figure_3.jpg" alt="Figure 2"/>
+<img src="/Graphics/Figure_3.jpg" alt="Figure 2" width="900"/>
 
 ### Faceted count distribution graphs using a five day average + uniform overlay of two additional averaged count distributions
 
