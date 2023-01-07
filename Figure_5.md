@@ -24,15 +24,14 @@ ordered$species <- factor(ordered$species, levels=c("raccoon","skunk","opossum",
 ```
 Generate graph and export to working directory as a PDF:
 ```
-p5 <- ggplot(ordered, aes(x=predator_count, y=predated_total, fill=species)) +
-  geom_point(pch=21, cex=2) +
+p5 <- ggplot(ordered, aes(x=predator_count, y=predated_total, color="grey50")) +
+  geom_point(pch=20, cex=2, color="black") +
   geom_smooth(data=ordered %>% filter(species %in% "raccoon"), method="lm", color="red4", lwd=0.5, linetype="dashed") +
   geom_smooth(data=ordered %>% filter(species %in% "skunk"), method="lm", color="red4", lwd=0.5, linetype="dashed") +
   facet_wrap(~species, scales='free') +
   scale_x_continuous(limits=c(0,5), breaks=seq(0,5,1)) +
   scale_y_continuous(limits=c(0,33)) +
-  labs(x="Sightings on camera", y="Predated nests", color="Species") +
-  scale_fill_manual(values=c('#b8b8b8','#353535','#db8098','#c1701f','#d0b98b')) +
+  labs(x="Sightings on camera", y="Predated nests") +
   theme_minimal() +
   theme(axis.line=element_line(), legend.position='none', panel.grid.major=element_blank(), panel.grid.minor=element_blank(), text=element_text(family="Times New Roman"))
 ggsave(p5, filename="species_regressions.pdf", devic=cairo_pdf, width=6, height=4, units="in")
