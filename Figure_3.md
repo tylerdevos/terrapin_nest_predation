@@ -67,15 +67,13 @@ Generate graph and export to working directory as a PDF:
 ```
 graph_labels <- c("total"="Total Predator Detections","raccoon"="Raccoon Detections","skunk"="Skunk Detections")
 p3 <- ggplot(long_averages, aes(julian_day, value, fill=variable)) +
-  geom_line(data=nesting, aes(julian_day, value, fill=NULL, color="nesting females"), alpha=0.5, linetype="solid") +
-  geom_line(data=hatching, aes(julian_day, value, fill=NULL, color="emerged nests"), alpha=0.5, linetype="solid") +
-  geom_line(show.legend=FALSE) +
-  geom_density_line(stat="identity", alpha=0.6, show.legend=FALSE) +
+  geom_line(data=nesting, aes(julian_day, value, fill=NULL, color="nesting terrapins"), alpha=0.7, linetype="solid") +
+  geom_line(data=hatching, aes(julian_day, value, fill=NULL, color="emerged terrapin nests"), alpha=0.7, linetype="solid") +
+  geom_line(linetype="solid") +
   scale_x_continuous(breaks=seq(150,276,25)) +
   scale_y_continuous(breaks=seq(0,25,5), limits=c(0,27)) +
   facet_wrap(~variable, ncol=1, labeller=labeller(variable=graph_labels), scales="free_x") +
-  scale_fill_manual(name='', values=c("total"="grey60", "raccoon"="grey60", "skunk"="grey60")) +
-  scale_color_manual(name="Terrapin Activity", values=c("nesting females" = "blue", "emerged nests" = "green4")) +
+  scale_color_manual(name="Count Type", values=c("predator detections" = "black", "nesting terrapins" = "blue", "emerged terrapin nests" = "green4")) +
   labs(x="Julian Day", y="Count") +
   ggtitle("2020") +
   theme_minimal() +
