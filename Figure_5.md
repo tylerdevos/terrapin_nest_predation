@@ -34,6 +34,6 @@ p5 <- ggplot(ordered, aes(x=predator_count, y=predated_total, color="grey50")) +
   labs(x="Sightings on camera", y="Predated nests") +
   theme_minimal() +
   theme(axis.line=element_line(), legend.position='none', panel.grid.major=element_blank(), panel.grid.minor=element_blank(), text=element_text(family="Times New Roman"))
-ggsave(p5, filename="species_regressions.pdf", devic=cairo_pdf, width=6, height=4, units="in")
+ggsave(p5, filename="species_regressions.pdf", device=cairo_pdf, width=6, height=4, units="in")
 ```
 ### [<<< Back to Figure 4](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Figure_4.md) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [To Figure 6 >>>](https://github.com/tylerdevos/terrapin_nest_predation/blob/main/Figure_6.md)
