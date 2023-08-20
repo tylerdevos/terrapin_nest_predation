@@ -46,7 +46,7 @@ p6A <- ggplot(long_averages, aes(julian_day, value)) +
   geom_density_line(stat="identity", alpha=0.3, show.legend=FALSE, fill="red") +
   scale_x_continuous(breaks=seq(150,225,25), limits=c(147,225)) +
   scale_y_continuous(breaks=seq(0,8,2), limits=c(0,8)) +
-  labs(x="Julian Day", y="Count") +
+  labs(x="Julian day", y="Count") +
   geom_vline(xintercept=147, color="red3", linetype="longdash") +
   geom_vline(xintercept=176, color="red3", linetype="longdash") +
   geom_vline(xintercept=188, color="red3", linetype="longdash") +
@@ -90,7 +90,7 @@ p6C <- ggplot(predator_locations, aes(week, proportion_inside_fence, color=speci
   geom_label(data=annotation, aes(x=x, y=y, label=label), color="black", size=4, fontface="bold") +
   scale_x_continuous(breaks=seq(1,11,1)) +
   scale_y_continuous(breaks=seq(0,1, 0.1), limits=c(0,1)) +
-  scale_color_manual(name="Species", values=c("raccoon"="grey60", "skunk"="black")) +
+  scale_color_manual(name="Species", values=c("raccoon"="grey60", "skunk"="black"), labels=c("Raccoon","Skunk")) +
   labs(x="Week", y="Proportion observed within fence boundary") +
   theme_minimal() +
   theme(plot.title=element_text(hjust=0.5), axis.line.x=element_line(), axis.line.y.left=element_line(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), text=element_text(family="Times New Roman"))
