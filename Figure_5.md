@@ -24,11 +24,12 @@ ordered$species <- factor(ordered$species, levels=c("raccoon","skunk","opossum",
 ```
 Generate graph and export to working directory as a PDF:
 ```
+graph_labels <- c("raccoon"="Raccoon","skunk"="Skunk","opossum"="Opossum","fox"="Fox","coyote"="Coyote")
 p5 <- ggplot(ordered, aes(x=predator_count, y=predated_total, color="grey50")) +
   geom_point(pch=20, cex=2, color="black") +
   geom_smooth(data=ordered %>% filter(species %in% "raccoon"), method="lm", color="red4", lwd=0.5, linetype="dashed") +
   geom_smooth(data=ordered %>% filter(species %in% "skunk"), method="lm", color="red4", lwd=0.5, linetype="dashed") +
-  facet_wrap(~species, scales='free') +
+  facet_wrap(~species, scales='free', labeller=labeller(species=graph_labels)) +
   scale_x_continuous(limits=c(0,5), breaks=seq(0,5,1)) +
   scale_y_continuous(limits=c(0,33)) +
   labs(x="Sightings on camera", y="Predated nests") +
