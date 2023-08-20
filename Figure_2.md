@@ -41,7 +41,7 @@ long_averages = melt(averages, "julian_day")
 ```
 Generate graph and export to working directory as a PDF:
 ```
-graph_labels <- c("nesting"="Nesting Females","predated"="Predated Nests","hatched"="Emerged Nests")
+graph_labels <- c("nesting"="Nesting females","predated"="Predated nests","hatched"="Emerged nests")
 p2 <- ggplot(long_averages, aes(julian_day, value, fill=variable)) +
   geom_line(show.legend=FALSE) +
   geom_density_line(stat="identity", alpha=0.3, show.legend=FALSE) +
@@ -49,7 +49,7 @@ p2 <- ggplot(long_averages, aes(julian_day, value, fill=variable)) +
   scale_y_continuous(breaks=seq(0,25,5), limits=c(0,25)) +
   facet_wrap(~variable, ncol=1, labeller=labeller(variable=graph_labels), scales="free_x") +
   scale_fill_manual(name='', values=c("nesting"="blue", "predated"="red", "hatched"="green3")) +
-  labs(x="Julian Day", y="Count") +
+  labs(x="Julian day", y="Count") +
   ggtitle("2020") +
   theme_minimal() +
   theme(plot.title=element_text(hjust=0.5), axis.line.x=element_line(), axis.line.y.left=element_line(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), text=element_text(family="Times New Roman"))
